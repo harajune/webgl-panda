@@ -1,2 +1,3 @@
+import * as PIXI from "pixi.js"
 
-console.log("hello")
+PIXI.utils.sayHello("WebGL")

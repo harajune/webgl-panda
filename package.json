@@ -5,9 +5,16 @@
   "author": "harajune",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^4.1.3"
+    "ts-loader": "^8.0.16",
+    "typescript": "^4.1.3",
+    "webpack": "^5.21.2",
+    "webpack-cli": "^4.5.0"
   },
   "scripts": {
-    "build": "tsc -p . && cp src/index.html build/"
+    "build": "webpack && cp src/index.html build/",
+    "dev": "webpack -w"
+  },
+  "dependencies": {
+    "pixi.js": "^5.3.7"
   }
 }
