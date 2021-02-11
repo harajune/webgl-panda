@@ -40,7 +40,7 @@ function setup() {
     strokeThickness: 4
   })
 
-  counter = new PIXI.Text("1 pandas", textStyle)
+  counter = new PIXI.Text("1 panda. Click/Tap to add pandas", textStyle)
   app.stage.addChild(counter)
 
   app.ticker.add(delta => gameLoop(delta))
